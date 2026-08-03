@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nova AI | Virtual Assistant</title>
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="chat-container">
+
+    <!-- Header -->
+
+    <div class="chat-header">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-robot"></i>
+
+        </div>
+
+        <div class="header-text">
+
+            <h2>Nova AI</h2>
+
+            <p>Your Intelligent Virtual Assistant</p>
+
+        </div>
+
+        <button id="themeBtn" title="Dark / Light Mode">
+
+            <i class="fa-solid fa-moon"></i>
+
+        </button>
+
+    </div>
+
+    <!-- Chat Box -->
+
+    <div id="chatBox" class="chat-box">
+
+        <div class="bot-message">
+
+            <i class="fa-solid fa-robot bot-icon"></i>
+
+            <div class="message">
+
+                👋 <b>Hello!</b>
+
+                <br><br>
+
+                Welcome to <b>Nova AI</b>.
+
+                <br><br>
+
+                I'm your personal AI assistant.
+
+                <br><br>
+
+                You can ask me things like:
+
+                <ul>
+
+                    <li>👋 Hi</li>
+
+                    <li>😊 How are you?</li>
+
+                    <li>🤖 Who are you?</li>
+
+                    <li>🧠 What is Artificial Intelligence?</li>
+
+                    <li>📅 Date</li>
+
+                    <li>⏰ Time</li>
+
+                    <li>💡 Tell me a quote</li>
+
+                    <li>😂 Tell me a joke</li>
+
+                    <li>👋 Bye</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Input Area -->
+
+    <div class="input-area">
+
+        <button class="voice-btn" onclick="startVoice()" title="Voice Input">
+
+            <i class="fa-solid fa-microphone"></i>
+
+        </button>
+
+        <input
+
+            type="text"
+
+            id="userInput"
+
+            placeholder="Ask Nova AI anything..."
+
+            autocomplete="off"
+
+        >
+
+        <button class="send-btn" onclick="sendMessage()" title="Send">
+
+            <i class="fa-solid fa-paper-plane"></i>
+
+        </button>
+
+    </div>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+
+</html>
